@@ -1,3 +1,13 @@
+---
+title: Forecasting Studio
+emoji: 📈
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 📈 Forecasting Studio
 
 An interactive **time-series model bake-off**. Pick a series, choose models, and the app runs
