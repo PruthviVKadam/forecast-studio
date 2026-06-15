@@ -1,0 +1,31 @@
+:root {
+  --bg: #0f1117; --panel: #171a23; --panel2: #1d212d; --border: #262b38;
+  --text: #e6e8ee; --dim: #a2a8b8; --accent: #5b8cff; --green: #3fb950;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 40px; }
+h1 { font-size: 1.6rem; margin: 0; letter-spacing: -0.01em; }
+h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--dim); margin: 16px 0 8px; }
+.sub { color: var(--dim); margin: 6px 0 22px; max-width: 70ch; }
+.muted { color: var(--dim); }
+.small { font-size: 0.82rem; }
+.footer { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 14px; }
+
+.grid { display: grid; grid-template-columns: 320px 1fr; gap: 18px; align-items: start; }
+@media (max-width: 880px) { .grid { grid-template-columns: 1fr; } }
+.panel { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+
+.run-btn { margin-top: 18px; width: 100%; padding: 11px 16px; font-size: 0.95rem; font-weight: 700;
+  background: var(--accent); color: #fff; border: none; border-radius: 9px; cursor: pointer; }
+.run-btn:hover { filter: brightness(1.07); }
+
+.takeaway { background: var(--panel2); border: 1px solid var(--border); border-left: 3px solid var(--green);
+  border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; font-size: 0.95rem; min-height: 1.2em; }
+
+/* Dash controls on dark */
+input[type="text"] { background: var(--panel2); color: var(--text); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; }
+.dash-dropdown .Select-control, .Select-menu-outer { background: var(--panel2) !important; color: var(--text); }
+label { font-size: 0.9rem; }

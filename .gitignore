@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# NOTE: data/*.parquet IS committed (offline cache for the 3 preset series).
+# Custom tickers fetched locally also land in data/ — ignore everything except the presets.
+/data/*
+!/data/SPY.parquet
+!/data/AAPL.parquet
+!/data/MSFT.parquet
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
