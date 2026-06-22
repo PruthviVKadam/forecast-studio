@@ -29,6 +29,18 @@ index, beating them is *hard*. That honesty is the point.
 - **Result:** An honest leaderboard. The interview-worthy takeaway is usually *"the baseline is
   hard to beat"* — which is exactly what a good forecaster should know.
 
+## Insights
+
+- **The naive baseline is brutally hard to beat.** On daily SPY, ARIMA (MASE 0.685) only *barely*
+  edges last-value (0.699), and XGBoost (0.957), seasonal-naive (1.122) and Prophet (3.42) all do
+  **worse**. On a near-efficient price series that's the correct result — and knowing when *not* to
+  ship a model is the senior skill.
+- **MASE < 1 is the bar.** Any model scoring ≥ 1 loses to naive and shouldn't ship — one
+  interpretable yardstick that survives across series.
+- **Most "great" forecasting results are leakage.** Re-fitting every model from scratch per fold (and
+  raising if train overlaps test) is what makes the leaderboard trustworthy; skip it and fancy models
+  look deceptively good.
+
 ## Example leaderboard (SPY, copied from app output)
 
 Cached daily SPY, 2024-06-13 → 2026-06-12 (501 points), horizon = 5, 4 folds:
