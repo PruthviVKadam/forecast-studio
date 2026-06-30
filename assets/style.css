@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
 :root {
-  --bg: #0f1117; --panel: #171a23; --panel2: #1d212d; --border: #262b38;
-  --text: #e6e8ee; --dim: #a2a8b8; --accent: #5b8cff; --green: #3fb950;
-  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bg: #0e0f14; --panel: #15171f; --panel2: #1b1e28; --border: #262a36;
+  --text: #eceef4; --dim: #8b92a4; --accent: #2dd4a8; --green: #2dd4a8;
+  --display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 40px; }
-h1 { font-size: 1.6rem; margin: 0; letter-spacing: -0.01em; }
-h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--dim); margin: 16px 0 8px; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 44px; }
+h1 { font-family: var(--display); font-size: 1.8rem; margin: 0; letter-spacing: -0.03em; }
+h3 { font-family: var(--display); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dim); margin: 18px 0 8px; }
 .sub { color: var(--dim); margin: 6px 0 22px; max-width: 70ch; }
 .muted { color: var(--dim); }
 .small { font-size: 0.82rem; }
